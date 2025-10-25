@@ -1,20 +1,20 @@
-# AI Chatbot Starter
+# AI Neko - 雨霁
 
-A modern AI chatbot template built on Tencent Cloud EdgeOne, supporting multiple AI models with real-time streaming responses. No traditional backend required.
+**AI猫娘·雨霁**是基于腾讯云EdgeOne的现代AI聊天机器人模板二次开发喵~ 经过精心调教，知书达理又可爱，支持多种AI模型，还能实时流式响应喵！不需要传统后端就能运行喵~
 
-## Deploy
+## 部署
 
 [![Deploy to EdgeOne](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?template=https://github.com/tomcomtang/ai-chatbot-starter&output-directory=./public&build-command=npm%20run%20build&install-command=npm%20install)
 
-Click the button above to deploy directly to Tencent Cloud EdgeOne Pages.
+点击上面的按钮，就能快速部署一个和雨霁一样的AI聊天机器人喵~
 
-## 🌐 Live Demo
+## 演示
 
-[https://ai-chatbot-starter.edgeone.app/](https://ai-chatbot-starter.edgeone.app/)
+来看看我的样子喵： [https://aineko.fhowo.top/](https://aineko.fhowo.top/)
 
-## ⚙️ Required Environment Variables
+## 环境变量
 
-Set the following environment variables (API keys) in EdgeOne Pages or your local `.env` file:
+在 EdgeOne Pages 或本地的 `.env` 文件中设置这些环境变量喵：
 
 ```
 DEEPSEEK_API_KEY=your_deepseek_api_key
@@ -24,62 +24,63 @@ NEBIUS_API_KEY=your_nebius_api_key
 CLAUDE_API_KEY=your_claude_api_key
 ```
 
-## ��️ Local Development
 
-### 1. Frontend (Next.js)
+## 本地开发
 
-Start the frontend locally:
+### 前端 (Next.js)
+
+在本地启动前端喵：
 
 ```bash
 npm install
 npm run dev
 ```
 
-### 2. Edge Functions (API)
+### Edge Functions (API)
 
-You need to install EdgeOne CLI globally and follow the official steps to run local edge functions:
+需要安装 EdgeOne CLI 来运行本地 Edge Functions 喵：
 
-#### Quick Start Guide
+#### 快速开始
 
-1. **Install EdgeOne CLI globally:**
+1. **安装 EdgeOne CLI：**
 
    ```bash
    npm install -g edgeone
    ```
 
-   For more commands, see the [scaffolding document](https://pages.edgeone.ai/document/edgeone-cli).
+   更多命令可以参考 [EdgeOne CLI 文档](https://pages.edgeone.ai/document/edgeone-cli)喵~
 
-2. **Function Initialization:**
+2. **初始化 Functions 目录：**
 
    ```bash
    edgeone pages init
    ```
 
-   This will automatically initialize the functions directory and host the functions code.
+   会自动初始化函数目录喵~
 
-3. **Associate Project:**
+3. **关联项目：**
 
    ```bash
    edgeone pages link
    ```
 
-   Enter your current project name to automatically associate project KV configuration, environment variables, etc.
+   输入项目名称，关联配置和环境变量喵~
 
-4. **Local Development:**
+4. **本地开发：**
 
    ```bash
    edgeone pages dev
    ```
 
-   This will start the local proxy service and enable function debugging (usually at http://localhost:8088).
+   启动本地服务，通常在 http://localhost:8088 喵~
 
-5. **Function Release:**
-   Push code to the remote repository to automatically build and release the function.
+5. **发布函数：**
+   把代码推送到远程仓库就能自动构建发布喵~
 
 ---
 
-Feel free to open an issue or PR if you have questions or suggestions!
+有什么问题或者建议的话，随时告诉我喵~
 
-## License
+## 许可证
 
-This project is licensed under the MIT License.
+本项目采用 MIT 许可证开源喵~
