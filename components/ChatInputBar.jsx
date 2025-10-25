@@ -52,7 +52,7 @@ export default function ChatInputBar({
         <textarea
           ref={textareaRef}
           className="w-full resize-none rounded-lg px-4 py-3 text-lg focus:outline-none focus:ring-0 focus:border-none border-none shadow-none min-h-[48px] max-h-40 bg-transparent"
-          placeholder="Type your message..."
+          placeholder="想和雨霁说点什么喵~"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           onKeyDown={handleKeyDown}

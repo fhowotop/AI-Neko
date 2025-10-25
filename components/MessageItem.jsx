@@ -1,6 +1,6 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import { FaUserCircle, FaRobot } from "react-icons/fa";
+import { Icon } from '@iconify/react';
 
 export default function MessageItem({ message }) {
   const isUser = message.role === "user";
@@ -12,7 +12,7 @@ export default function MessageItem({ message }) {
       return (
         <div className="flex items-center justify-start mb-2 min-h-[48px]">
           <div className="flex-shrink-0 mr-2 flex items-center">
-            <FaRobot className="text-2xl" style={{ color: '#555' }} />
+            <Icon icon="arcticons:nekogotchi-alt" className="text-2xl" style={{ color: '#555' }} />
           </div>
           <div className="flex items-center w-full">
             <span className="animate-pulse text-base text-gray-900">AI is thinking</span>
@@ -28,7 +28,7 @@ export default function MessageItem({ message }) {
     return (
       <div className="flex items-start justify-start mb-2">
         <div className="flex-shrink-0 mr-2 mt-1">
-          <FaRobot className="text-2xl" style={{ color: '#555' }} />
+          <Icon icon="arcticons:nekogotchi-alt" className="text-2xl" style={{ color: '#555' }} />
         </div>
         <div className="flex flex-col w-full">
           {/* 分析过程（如果有的话） */}
@@ -81,8 +81,8 @@ export default function MessageItem({ message }) {
         </svg>
       </div>
       <div className="flex-shrink-0 ml-4">
-        <FaUserCircle className="text-2xl" style={{ color: '#555' }} />
+        <Icon icon="arcticons:nekogramx" className="text-2xl" style={{ color: '#555' }} />
       </div>
     </div>
   );
-} 
+}

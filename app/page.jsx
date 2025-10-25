@@ -198,7 +198,7 @@ export default function Home() {
         const newMsgs = [...prevMsgs];
         newMsgs[idx] = {
           role: "assistant",
-          content: "[Error contacting AI service]",
+          content: "[联系AI时出错了喵~]",
           reasoning: ""
         };
         return newMsgs.map(msg => {
@@ -255,9 +255,9 @@ export default function Home() {
           >
             <div className="w-full max-w-2xl flex-1 flex flex-col justify-center items-center">
               <div className="flex flex-col items-center justify-center mb-24 select-none">
-                <h1 className="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight drop-shadow-sm text-center">Multi-model AI Chatbot</h1>
+                <h1 className="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight drop-shadow-sm text-center">AI猫娘·雨霁</h1>
                 <p className="text-lg text-gray-500 mb-2 text-center max-w-2xl">
-                  Unlock new ways of thinking, creating, and working—AI empowers your ideas and accelerates your journey.
+                  您将与名为雨霁的猫娘少女进行对话，她是一个傲娇可爱的猫娘请好好对待她喵~
                 </p>
               </div>
               <ChatInputBar
